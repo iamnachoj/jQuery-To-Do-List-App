@@ -1,8 +1,13 @@
 document.querySelector("#input").addEventListener("keypress", function (e) {
     if (e.key === "Enter") {
       newItem();
-      removeText();
+      document.getElementById("input").value = "";
     }
+});
+
+document.querySelector("#button").addEventListener("click", function () {
+   newItem();
+   document.getElementById("input").value = "";
 });
 
 function newItem(){
@@ -40,6 +45,5 @@ function newItem(){
  	}
  // 4. Reordering the items:
    $('#list').sortable();
- // 5. remove current text on list:
-   
+
 }
