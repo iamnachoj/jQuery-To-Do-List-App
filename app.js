@@ -1,9 +1,7 @@
-document.querySelector("#input").addEventListener("keypress", function (e) {
-    if (e.key === "Enter") {
-      newItem();
-      document.getElementById("input").value = "";
-    }
-});
+$("#input").keypress((e)=>{if(e.key === "Enter") {
+  newItem();
+  $("input").val("")
+  }});
 
 document.querySelector("#button").addEventListener("click", function () {
    newItem();
