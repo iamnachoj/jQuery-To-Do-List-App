@@ -37,13 +37,13 @@ function newItem(){
         li.remove();
       }
 
-      // 4. Reordering the items:
+      // Reordering the items:
      $('#list').sortable();
 
 }
 
 
-// 5. in order to make it responsive, I change the instrucctions to "tab" instead of "click"
+// In order to make it responsive, I change the instrucctions to "tab" instead of "click"
 // according to the screen size, assuming that when you use a screen larger than 700px you
 //  will be using a computer instead of a smartphone or tablet.
 
