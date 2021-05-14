@@ -3,9 +3,9 @@ $("#input").keypress((e)=>{if(e.key === "Enter") {
   $("input").val("")
   }});
 
-document.querySelector("#button").addEventListener("click", function () {
+$("#button").click(()=> {
    newItem();
-   document.getElementById("input").value = "";
+   $("input").val("");
 });
 
 function newItem(){
